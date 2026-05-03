@@ -1,0 +1,10 @@
+# 忽略所有 build 文件夹（中间产物）
+**/build/
+
+# 忽略交叉编译产物（我们只上传源码图纸，不上传成品）
+install/
+
+# 忽略临时文件
+*.deb
+*.tar.gz
+arm_sysroot_hack/

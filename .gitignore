@@ -1,13 +1,11 @@
-# 忽略交叉编译产物
 install/
 
-# 忽略临时打劫物资
 *.deb
 *.tar.gz
 arm_sysroot_hack/
 **/build/
 
-# 忽略第三方库的源码（我们只追踪自己的 H2M2 业务代码）
+# 忽略第三方库的源码
 Fast-CDR/
 Fast-DDS/
 foonathan_memory_vendor/

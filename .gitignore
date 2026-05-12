@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 install/
 
 *.deb
@@ -12,3 +13,51 @@ foonathan_memory_vendor/
 iceoryx/
 tinyxml2/
 asio/
+=======
+# ==========================================
+# H2M2 Middleware 核心忽略规则
+# ==========================================
+
+# --- 1. 编译与构建产物 (重点：无论在哪编译都要忽略) ---
+**/build/
+**/bin/
+**/lib/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+install/
+
+# --- 2. 编译生成的可执行文件 (防止二进制污染) ---
+h2m2_pub
+h2m2_sub
+h2m2_publisher
+h2m2_subscriber
+
+# --- 3. 第三方庞大源码库 (我们通过 lib 引用，不追踪源码) ---
+iceoryx/
+Fast-DDS/
+Fast-CDR/
+foonathan_memory_vendor/
+tinyxml2/
+asio/
+
+# --- 4. 平台相关临时物资 ---
+*.deb
+*.tar.gz
+arm_sysroot_hack/
+aarch64_toolchain.cmake
+
+# --- 5. 媒体与测试大数据 (GitHub 传不动，建议本地留存) ---
+*.mp4
+*.jpg
+*.png
+*.yuv
+
+# --- 6. 编辑器与系统临时文件 ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+>>>>>>> 64189a5 (冰羚4k视频拷贝)

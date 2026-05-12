@@ -1,0 +1,15 @@
+[general]
+version = 1
+
+[[segment]]
+readerGroup = "roudi"
+writerGroup = "roudi"
+
+[[segment.mempool]]
+size = 1024
+count = 100
+
+[[segment.mempool]]
+size = 25000000
+count = 20
+
